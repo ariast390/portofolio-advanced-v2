@@ -102,3 +102,9 @@ darkToggleMobile.addEventListener("click", function () {
   }
 });
 // darkmode toggle end
+
+// AOS init (script ini harus dimuat SETELAH aos.js)
+if (typeof AOS !== "undefined") {
+  AOS.init();
+}
+// AOS init end

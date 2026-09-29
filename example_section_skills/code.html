@@ -1,0 +1,508 @@
+<!DOCTYPE html><html lang="en" style="width: 1280px; height: 1617px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#00714d", "on-secondary-fixed-variant": "#005236", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-bright": "#f9f9ff", "on-error": "#ffffff", "surface-container-highest": "#dce2f7", "surface-container-low": "#f1f3ff", "on-primary": "#ffffff", "tertiary-fixed-dim": "#bcc9c6", "tertiary": "#525e5c", "error-container": "#ffdad6", "secondary": "#006c49", "inverse-on-surface": "#edf0ff", "on-primary-fixed-variant": "#004395", "inverse-surface": "#293040", "surface-card": "#FFFFFF", "on-secondary-fixed": "#002113", "on-tertiary-fixed": "#121e1c", "on-surface-variant": "#424754", "primary-fixed": "#d8e2ff", "outline-variant": "#c2c6d6", "secondary-container": "#6cf8bb", "on-secondary": "#ffffff", "secondary-fixed": "#6ffbbe", "on-primary-fixed": "#001a42", "primary-container": "#2170e4", "accent-mint-tint": "#EFFCF8", "surface-dim": "#d3daef", "surface-tint": "#005ac2", "on-tertiary-container": "#f4fffb", "background": "#f9f9ff", "on-background": "#141b2b", "inverse-primary": "#adc6ff", "surface-container-high": "#e1e8fd", "tertiary-fixed": "#d8e5e1", "on-surface": "#141b2b", "surface": "#f9f9ff", "primary-fixed-dim": "#adc6ff", "surface-subtle": "#F3F4F6", "tertiary-container": "#6b7774", "surface-container": "#e9edff", "primary": "#0058be", "surface-container-lowest": "#ffffff", "surface-variant": "#dce2f7", "secondary-fixed-dim": "#4edea3", "on-primary-container": "#fefcff", "on-tertiary-fixed-variant": "#3d4947", "on-error-container": "#93000a", "outline": "#727785" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "gutter-mobile": "1rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin": "2rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-sm": ["Nunito Sans"], "body-md": ["Nunito Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Nunito Sans"], "display-hero": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero": ["48px", { "lineHeight": "56px", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<!-- Interactive Ambient Header Backdrop -->
+<div class="relative w-full max-w-[1200px] mx-auto px-margin pt-space-lg pb-space-md">
+<!-- Top Decorative Blur Rings -->
+<div class="absolute -top-12 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-10 right-10 w-72 h-72 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Header Section -->
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="max-w-2xl flex flex-col gap-space-xs">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-accent-mint-tint w-fit shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-container font-bold">Keahlian &amp; Kompetensi</span>
+</div>
+<!-- Main Title -->
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">Keahlian Teknis &amp; Kompetensi Profesional<span class="text-primary">.</span></h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Kualifikasi komprehensif mencakup arsitektur perangkat lunak modern, pengembangan antarmuka terukur, serta kepemimpinan teknis dan kolaborasi lintas fungsi untuk menciptakan solusi digital berdampak tinggi.</p>
+</div>
+<!-- Quick CTA Button -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="group inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-card shadow-sm hover:shadow-md text-on-surface transition-all duration-200 active:scale-95" id="copy-summary-btn" onclick="copyCompetencySummary()">
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:rotate-12 transition-transform duration-200">content_copy</span>
+<span class="font-label-md text-label-md">Unduh / Salin Rekap</span>
+<span class="hidden font-label-sm text-label-sm text-secondary bg-accent-mint-tint px-2 py-0.5 rounded-full ml-1" id="copy-toast">Tersalin!</span>
+</button>
+</div>
+</div>
+<!-- Filter & Live Search Toolbar -->
+<div class="relative z-10 mt-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md p-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<!-- Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 lg:pb-0" id="filter-container"><button class="filter-pill active-pill px-space-md py-1.5 rounded-lg font-label-md text-label-md transition-all duration-200 bg-primary text-on-primary shadow-sm" onclick="filterCategory('all', this)">
+          Semua <span class="ml-1 opacity-80">(26)</span>
+</button>
+<button class="filter-pill px-space-md py-1.5 rounded-lg font-label-md text-label-md hover:text-on-surface hover:bg-surface-card/80 transition-all duration-200 bg-surface-card text-on-surface-variant" onclick="filterCategory('hard', this)">
+          Hard Skills <span class="ml-1 opacity-70">(17)</span>
+</button>
+<button class="filter-pill px-space-md py-1.5 rounded-lg font-label-md text-label-md hover:text-on-surface hover:bg-surface-card/80 transition-all duration-200 bg-surface-card text-on-surface-variant" onclick="filterCategory('soft', this)">
+          Soft Skills <span class="ml-1 opacity-70">(9)</span>
+</button>
+<button class="filter-pill px-space-md py-1.5 rounded-lg font-label-md text-label-md hover:text-on-surface hover:bg-surface-card/80 transition-all duration-200 bg-surface-card text-on-surface-variant" onclick="filterCategory('infra', this)">
+          Tools &amp; Infra <span class="ml-1 opacity-70">(8)</span>
+</button></div>
+<!-- Quick Interactive Search Input -->
+<div class="relative min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-space-md py-1.5 rounded-lg bg-surface-card font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none shadow-sm transition-all focus:bg-surface-card" id="skill-search" oninput="searchSkills(this.value)" placeholder="Cari teknologi, skill, atau stack..." type="text">
+</div>
+</div>
+</div>
+<!-- Multi-Column Grid Layout -->
+<div class="w-full max-w-[1200px] mx-auto px-margin py-space-md">
+<div class="flex flex-col gap-space-lg w-full">
+<!-- Left / Hard Skills Section (full width top block or grid balance) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Hard Skills & Tech Stack (Full or 12 cols / prominent) -->
+<div class="lg:col-span-12 flex flex-col gap-space-lg" id="hard-skills-section">
+<!-- Primary Architecture Card Container -->
+<div class="bg-surface-card rounded-xl shadow-sm p-space-lg flex flex-col gap-space-lg">
+<!-- Section Card Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">terminal</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Hard Skills &amp; Stack</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Arsitektur, antarmuka &amp; skalabilitas data</p>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-bold">
+<span class="">v2025</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-space-lg md:grid-cols-2"><!-- Group 1: Frontend & Mobile Architecture -->
+<div class="skill-category-group flex flex-col p-space-md rounded-xl border border-outline-variant/40 bg-surface-container-low/40 hover:bg-surface-container-low transition-all duration-200 gap-space-sm" data-category="hard">
+<div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Frontend &amp; Mobile Architecture</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium bg-surface-card px-2 py-0.5 rounded shadow-sm">Core Stack</span>
+</div>
+<!-- Skill Pills Grid -->
+<div class="flex flex-wrap gap-2 pt-1">
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="react">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">code_blocks</span>
+<span class="font-label-md text-label-md text-on-surface">React</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="next.js nextjs">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">bolt</span>
+<span class="font-label-md text-label-md text-on-surface">Next.js 14</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="typescript ts">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">integration_instructions</span>
+<span class="font-label-md text-label-md text-on-surface">TypeScript</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="tailwind css">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">style</span>
+<span class="font-label-md text-label-md text-on-surface">Tailwind CSS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="flutter mobile">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">phone_iphone</span>
+<span class="font-label-md text-label-md text-on-surface">Flutter</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="vue.js vue">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">widgets</span>
+<span class="font-label-md text-label-md text-on-surface">Vue.js</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="html5 modern css">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">html</span>
+<span class="font-label-md text-label-md text-on-surface">HTML5 / Modern CSS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+</div>
+<!-- Group 2: Backend & Distributed API -->
+<div class="skill-category-group flex flex-col p-space-md rounded-xl border border-outline-variant/40 bg-surface-container-low/40 hover:bg-surface-container-low transition-all duration-200 gap-space-sm" data-category="infra">
+<div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Backend, API &amp; Cloud Infra</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium bg-surface-card px-2 py-0.5 rounded shadow-sm">Distributed Systems</span>
+</div>
+<!-- Skill Pills Grid -->
+<div class="flex flex-wrap gap-2 pt-1">
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="node.js node">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:scale-110 transition-transform">dns</span>
+<span class="font-label-md text-label-md text-on-surface">Node.js</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="express">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:scale-110 transition-transform">alt_route</span>
+<span class="font-label-md text-label-md text-on-surface">Express</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="python">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:scale-110 transition-transform">terminal</span>
+<span class="font-label-md text-label-md text-on-surface">Python</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="postgresql sql db">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:scale-110 transition-transform">database</span>
+<span class="font-label-md text-label-md text-on-surface">PostgreSQL</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="restful apis api graphql">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:scale-110 transition-transform">api</span>
+<span class="font-label-md text-label-md text-on-surface">RESTful APIs</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="docker container">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:scale-110 transition-transform">deployed_code</span>
+<span class="font-label-md text-label-md text-on-surface">Docker</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="supabase cloud">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:scale-110 transition-transform">cloud_sync</span>
+<span class="font-label-md text-label-md text-on-surface">Supabase</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="git ci/cd devops">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:scale-110 transition-transform">merge</span>
+<span class="font-label-md text-label-md text-on-surface">Git &amp; CI/CD</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+</div>
+<!-- Group 3: Design Systems & UX -->
+<div class="skill-category-group flex flex-col p-space-md rounded-xl border border-outline-variant/40 bg-surface-container-low/40 hover:bg-surface-container-low transition-all duration-200 gap-space-sm" data-category="hard">
+<div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Design Systems &amp; UX</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium bg-surface-card px-2 py-0.5 rounded shadow-sm">Fidelity &amp; Flow</span>
+</div>
+<!-- Skill Pills Grid -->
+<div class="flex flex-wrap gap-2 pt-1">
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="ui ux design">
+<span class="material-symbols-outlined text-secondary text-[18px] group-hover:scale-110 transition-transform">palette</span>
+<span class="font-label-md text-label-md text-on-surface">UI/UX Design</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="figma tokens design system">
+<span class="material-symbols-outlined text-secondary text-[18px] group-hover:scale-110 transition-transform">token</span>
+<span class="font-label-md text-label-md text-on-surface">Figma Tokens</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="design systems">
+<span class="material-symbols-outlined text-secondary text-[18px] group-hover:scale-110 transition-transform">dashboard_customize</span>
+<span class="font-label-md text-label-md text-on-surface">Design Systems</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="responsive design mobile web">
+<span class="material-symbols-outlined text-secondary text-[18px] group-hover:scale-110 transition-transform">devices</span>
+<span class="font-label-md text-label-md text-on-surface">Responsive Design</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="prototyping interaction">
+<span class="material-symbols-outlined text-secondary text-[18px] group-hover:scale-110 transition-transform">play_circle</span>
+<span class="font-label-md text-label-md text-on-surface">Prototyping</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+</div>
+<!-- Group 4: DevOps, Tooling & Testing -->
+<div class="skill-category-group flex flex-col p-space-md rounded-xl border border-outline-variant/40 bg-surface-container-low/40 hover:bg-surface-container-low transition-all duration-200 gap-space-sm" data-category="infra">
+<div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">DevOps, Tooling &amp; Testing</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium bg-surface-card px-2 py-0.5 rounded shadow-sm">Quality &amp; CI</span>
+</div>
+<div class="flex flex-wrap gap-2 pt-1">
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="docker container devops">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">deployed_code</span>
+<span class="font-label-md text-label-md text-on-surface">Docker</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="github actions ci cd workflow">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">merge</span>
+<span class="font-label-md text-label-md text-on-surface">GitHub Actions / CI</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="vitest jest testing unit test">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">biotech</span>
+<span class="font-label-md text-label-md text-on-surface">Vitest / Jest</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="cypress e2e testing integration test">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">task_alt</span>
+<span class="font-label-md text-label-md text-on-surface">Cypress / E2E</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="webpack vite bundler build tools">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">bolt</span>
+<span class="font-label-md text-label-md text-on-surface">Webpack &amp; Vite</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-card hover:bg-surface-container-high transition-all duration-200 cursor-default group hover:-translate-y-0.5 shadow-sm" data-name="linux bash cli shell">
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:scale-110 transition-transform">terminal</span>
+<span class="font-label-md text-label-md text-on-surface">Linux &amp; Bash</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+</div></div>
+</div>
+<!-- Metric Snapshot Bar -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Uptime Sistem &amp; Server</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-1">99.98%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SLA ketersediaan server &amp; infrastruktur cloud 24/7</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Resolusi Tiket IT</span>
+<span class="font-headline-lg text-headline-lg text-secondary font-bold mt-1">&lt; 15 m</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rata-rata waktu tanggap &amp; penyelesaian insiden IT Support</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mitigasi Insiden &amp; MTTR</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">99.2%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero critical downtime &amp; kepatuhan audit keamanan</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Area: Soft Skills & Core Strengths Side-by-Side (利用 ruang kosong di sebelah kanan) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="soft-skills-section">
+<!-- Soft Skills & Strengths (Left card) -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg h-full">
+<div class="skill-category-group bg-surface-card rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md h-full" data-category="soft">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">psychology</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Soft Skills &amp; Strengths</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Kepemimpinan, empati &amp; pola pikir adaptif</p>
+</div>
+<span class="w-8 h-8 rounded-lg bg-accent-mint-tint flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+</div>
+<!-- Pills List -->
+<div class="flex flex-wrap gap-2">
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="problem solving">
+<span class="material-symbols-outlined text-secondary text-[18px]">build</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Problem Solving</span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="critical thinking">
+<span class="material-symbols-outlined text-secondary text-[18px]">insights</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Critical Thinking</span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="team collaboration">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Team Collaboration</span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="clear communication">
+<span class="material-symbols-outlined text-secondary text-[18px]">forum</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Clear Communication</span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="agile scrum sprint">
+<span class="material-symbols-outlined text-secondary text-[18px]">sync</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Agile &amp; Scrum</span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="adaptability">
+<span class="material-symbols-outlined text-secondary text-[18px]">tune</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Adaptability</span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="time management">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Time Management</span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="engineering mentorship mentor">
+<span class="material-symbols-outlined text-secondary text-[18px]">school</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Engineering Mentorship</span>
+</div>
+<div class="skill-item flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-subtle hover:bg-accent-mint-tint hover:text-on-secondary-container transition-all duration-200 cursor-default shadow-sm group" data-name="attention to detail qa">
+<span class="material-symbols-outlined text-secondary text-[18px]">visibility</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-on-secondary-container">Attention to Detail</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Core Strengths & Mastery Card (Right card, sits directly next to Soft Skills) -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg h-full" id="core-strengths-section">
+<div class="bg-surface-card rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md h-full">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Core Strengths &amp; Mastery</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tingkat kemahiran terverifikasi dalam pengiriman produk</p>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary bg-primary-fixed/30 px-2 py-0.5 rounded">Verified</span>
+</div>
+<div class="flex flex-col gap-space-lg pt-space-xs">
+<!-- Track Item 1 -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Full-Stack Architecture &amp; App Delivery</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">4+ Tahun</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-1000" style="width: 92%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Spesialisasi integrasi REST/GraphQL cepat, SSR modular, dan pemeliharaan arsitektur React berskala enterprise.
+            </p>
+</div>
+<!-- Track Item 2 -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">UI/UX Engineering &amp; Tokens</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">3+ Tahun</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-1000" style="width: 88%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Jembatan mulus antara Figma Design Tokens ke komponen antarmuka responsif tanpa kehilangan konsistensi visual.
+            </p>
+</div>
+<!-- Track Item 3 -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Technical Leadership &amp; Mentorship</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Active Lead</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-on-surface h-full rounded-full transition-all duration-1000" style="width: 84%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Memimpin code review komprehensif, sprint grooming efisien, dan standardisasi best practices engineering.
+            </p>
+</div>
+</div>
+<!-- Bottom Micro-Interaction Banner -->
+<div class="mt-auto pt-space-xs">
+<div class="p-space-md rounded-xl bg-accent-mint-tint flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">workspace_premium</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-secondary-container">Continuous Evolution</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">Selalu mengadopsi standar web terkini secara konsisten.</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-on-secondary-container transition-colors" data-path="lab" href="#">
+<span class="">Eksplor Lab</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Logic for Search, Pill Filtering, & Summary Copy -->
+<script>
+    function filterCategory(category, buttonElement) {
+      // Update active pill button style
+      const pills = document.querySelectorAll('.filter-pill');
+      pills.forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        p.classList.add('bg-surface-card', 'text-on-surface-variant');
+      });
+
+      buttonElement.classList.remove('bg-surface-card', 'text-on-surface-variant');
+      buttonElement.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+      const hardSection = document.getElementById('hard-skills-section');
+      const softSection = document.getElementById('soft-skills-section');
+      const groups = document.querySelectorAll('.skill-category-group');
+
+      if (category === 'all') {
+        groups.forEach(g => g.classList.remove('hidden'));
+        hardSection.classList.remove('hidden');
+        softSection.classList.remove('hidden');
+      } else if (category === 'hard') {
+        groups.forEach(g => {
+          if (g.dataset.category === 'hard') {
+            g.classList.remove('hidden');
+          } else {
+            g.classList.add('hidden');
+          }
+        });
+        hardSection.classList.remove('hidden');
+        softSection.classList.add('hidden');
+      } else if (category === 'soft') {
+        groups.forEach(g => {
+          if (g.dataset.category === 'soft') {
+            g.classList.remove('hidden');
+          } else {
+            g.classList.add('hidden');
+          }
+        });
+        hardSection.classList.add('hidden');
+        softSection.classList.remove('hidden');
+      } else if (category === 'infra') {
+        groups.forEach(g => {
+          if (g.dataset.category === 'infra') {
+            g.classList.remove('hidden');
+          } else {
+            g.classList.add('hidden');
+          }
+        });
+        hardSection.classList.remove('hidden');
+        softSection.classList.add('hidden');
+      }
+    }
+
+    function searchSkills(query) {
+      const q = query.trim().toLowerCase();
+      const skillItems = document.querySelectorAll('.skill-item');
+      
+      skillItems.forEach(item => {
+        const skillName = item.dataset.name.toLowerCase();
+        if (q === '' || skillName.includes(q)) {
+          item.classList.remove('opacity-20', 'scale-95');
+          item.classList.add('opacity-100');
+        } else {
+          item.classList.add('opacity-20', 'scale-95');
+          item.classList.remove('opacity-100');
+        }
+      });
+    }
+
+    function copyCompetencySummary() {
+      const summaryText = `Ari A. - Ringkasan Kompetensi Engineering:
+- Core Stack: React, Next.js 14, TypeScript, Tailwind CSS, Flutter, Vue.js, HTML5/Modern CSS
+- Backend & Cloud: Node.js, Express, Python, PostgreSQL, RESTful APIs, Docker, Supabase, Git CI/CD
+- Design Systems: Figma Tokens, Tokens to Components, Micro-interactions, Responsive UX
+- Soft Skills: Problem Solving, Mentorship, Tech Leadership, Clear Async Communication
+Portfolio: Modern Creative Engineering (v2025)`;
+
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(summaryText).then(() => {
+          showCopyToast();
+        });
+      } else {
+        showCopyToast();
+      }
+    }
+
+    function showCopyToast() {
+      const toast = document.getElementById('copy-toast');
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 2400);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-space-xl"></footer>
+
+
+</body></html>

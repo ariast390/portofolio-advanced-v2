@@ -6,14 +6,7 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-NEJ9X68VRT"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-NEJ9X68VRT");
-    </script>
+    <script src="dist/js/gtag.js"></script>
     <!-- google tag end -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,7 +20,10 @@
       content="website portfolio, website portofolio, aria sena, aria blogs"
     />
     <meta name="author" content="Aria Sena" />
-    <link href="dist/output.css" rel="stylesheet" />
+    <!-- Tailwind CSS (CDN, JIT compiled in-browser) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="dist/js/tailwind.config.js"></script>
+    <!-- Tailwind CDN end -->
     <link rel="stylesheet" href="src/styles.css" />
     <script
       src="https://kit.fontawesome.com/021eda2c9b.js"
@@ -126,9 +122,9 @@
               >
               <span class="px-2 py-2 text-lg text-gray-300">|</span>
               <a
-                href="#portfolio"
+                href="#skills"
                 class="rounded-md px-3 py-2 font-bold text-[#2C3333] duration-300 hover:bg-slate-900 hover:text-[#53aaaa] dark:text-white sm:text-lg md:px-1 md:text-lg lg:px-3 lg:text-xl"
-                >Portfolio</a
+                >Skills</a
               >
               <span class="px-2 py-2 text-lg text-gray-300">|</span>
               <a
@@ -183,9 +179,9 @@
             >My Journey</a
           >
           <a
-            href="#portfolio"
+            href="#skills"
             class="flex items-start justify-center rounded px-3 py-2 text-lg font-bold text-[#2C3333] duration-150 hover:bg-gray-700 hover:text-[#53aaaa]"
-            >Portfolio</a
+            >Skills</a
           >
           <a
             href="#contact-me"
@@ -281,14 +277,15 @@
               </span>
             </h2>
             <h2 class="mb-4 text-lg font-bold text-gray-700 dark:text-gray-400">
-              Fresh Graduate | Systems Information
+              IT Infrastructure & Support Supervisor
             </h2>
 
             <p
               class="mb-7 text-base font-bold leading-relaxed text-dark dark:text-neutral-50 sm:w-3/4 lg:text-neutral-700"
             >
-              Passionate for computers, networking, and programming. Learning
-              new things is my way to keep growing.
+              Experienced in Microsoft 365, Active Directory, network
+              infrastructure, and IT operations. Passionate about keeping IT
+              services stable, secure, and reliable.
             </p>
 
             <div class="flex items-center">
@@ -427,12 +424,15 @@
               <p
                 class="mb-2 text-justify text-sm text-gray-500 dark:text-gray-400 md:text-lg"
               >
-                I am a student and also have an interest in web development,
-                focusing on front-end development. I am passionate about
-                creating engaging and functional user experiences through
-                responsive and interactive designs. With expertise in HTML, CSS,
-                and JavaScript, I love building modern, aesthetically pleasing
-                websites.
+                IT Infrastructure & Support professional with experience in
+                managing Microsoft 365 environments, Active Directory, network
+                infrastructure, and IT operations. Experienced in providing
+                technical support to 100–150 on-site users and administering
+                Microsoft 365 services for 1,000+ users, including user
+                accounts, email, licensing, and access management. Skilled in
+                hardware, software, and network troubleshooting, MikroTik
+                network monitoring, firewall and endpoint security, IT asset
+                lifecycle management, vendor coordination, and GRC compliance.
               </p>
             </div>
           </div>
@@ -445,7 +445,7 @@
               aria-expanded="false"
               aria-controls="accordion-collapse-body-2"
             >
-              <span class="text-xl font-bold">My Skills</span>
+              <span class="text-xl font-bold">Education & Certifications</span>
               <svg
                 data-accordion-icon
                 class="h-6 w-6 shrink-0"
@@ -469,105 +469,83 @@
             <div
               class="rounded-b-xl border border-gray-300 p-5 dark:border-gray-300"
             >
-              <div class="flex flex-wrap justify-center gap-10">
-                <!-- Keahlian HTML -->
-                <div class="flex flex-col items-center justify-center gap-1">
+              <!-- Education -->
+              <div class="mb-6">
+                <h3
+                  class="mb-3 flex items-center gap-2 text-lg font-bold text-dark dark:text-white"
+                >
+                  <!-- <i class="fa-solid fa-graduation-cap text-primary"></i> -->
+                  Education
+                </h3>
+                <div class="flex flex-col gap-4">
                   <div
-                    class="flex h-12 w-12 transform items-center justify-center transition-all duration-300 hover:scale-110"
+                    class="rounded-lg border border-gray-200 p-4 dark:border-gray-600"
                   >
-                    <img src="dist/img/icon/icon-html.png" alt="HTML Icon" />
+                    <p
+                      class="text-base font-semibold text-slate-900 dark:text-white"
+                    >
+                      Universitas Merdeka Malang
+                    </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      Information Systems &middot; 2019 - 2023
+                    </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      GPA 3.79/4.00
+                    </p>
                   </div>
-                  <div>
-                    <p class="text-lg font-semibold">HTML</p>
-                  </div>
-                  <div>
-                    <p class="text-base text-gray-500">Advanced</p>
+                  <div
+                    class="rounded-lg border border-gray-200 p-4 dark:border-gray-600"
+                  >
+                    <p
+                      class="text-base font-semibold text-slate-900 dark:text-white"
+                    >
+                      SMK Negeri 6 Malang
+                    </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      Computer and Network Engineering (TKJ) &middot; 2017 -
+                      2019
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <!-- Keahlian CSS -->
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div
-                    class="flex h-12 w-12 transform items-center justify-center transition-all duration-300 hover:scale-110"
-                  >
-                    <img src="dist/img/icon/icon-css.png" alt="CSS Icon" />
-                  </div>
-                  <div>
-                    <p class="text-lg font-semibold">CSS</p>
-                  </div>
-                  <div>
-                    <p class="text-base text-gray-500">Intermediate</p>
-                  </div>
-                </div>
-
-                <!-- Keahlian JavaScript -->
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div
-                    class="flex h-12 w-12 transform items-center justify-center transition-all duration-300 hover:scale-110"
-                  >
-                    <img
-                      src="dist/img/icon/icon-JS.png"
-                      alt="JavaScript Icon"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-lg font-semibold">JavaScript</p>
-                  </div>
-                  <div>
-                    <p class="text-base text-gray-500">Intermediate</p>
-                  </div>
-                </div>
-
-                <!-- Keahlian React -->
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div
-                    class="flex h-12 w-12 transform items-center justify-center transition-all duration-300 hover:scale-110"
-                  >
-                    <img src="dist/img/icon/icon-react.png" alt="React Icon" />
-                  </div>
-                  <div>
-                    <p class="text-lg font-semibold">ReactJs</p>
-                  </div>
-                  <div>
-                    <p class="text-base text-gray-500">Beginner</p>
-                  </div>
-                </div>
-
-                <!-- Keahlian Python -->
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div
-                    class="flex h-12 w-12 transform items-center justify-center transition-all duration-300 hover:scale-110"
-                  >
-                    <img
-                      src="dist/img/icon/icon-python.png"
-                      alt="Python Icon"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-lg font-semibold">Python</p>
-                  </div>
-                  <div>
-                    <p class="text-base text-gray-500">Intermediate</p>
-                  </div>
-                </div>
-
-                <!-- Keahlian Network Engineer -->
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div
-                    class="w-13 flex h-12 transform items-center justify-center transition-all duration-300 hover:scale-110"
-                  >
-                    <img
-                      src="dist/img/icon/icon-network.png"
-                      alt="Network Icon"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-lg font-semibold">Network</p>
-                  </div>
-                  <div>
-                    <p class="text-base text-gray-500">Intermediate</p>
-                  </div>
-                </div>
+              <!-- Certifications -->
+              <div>
+                <h3
+                  class="mb-3 flex items-center gap-2 text-lg font-bold text-dark dark:text-white"
+                >
+                  <!-- <i class="fa-solid fa-certificate text-primary"></i> -->
+                  Courses &amp; Certifications
+                </h3>
+                <ul
+                  class="flex flex-col gap-2 text-sm text-gray-500 dark:text-gray-400 md:text-base"
+                >
+                  <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-primary"></i>
+                    <span
+                      >Internship Completion Certified &mdash; PT LAPI ITB</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-primary"></i>
+                    <span
+                      >Frontend Engineering Bootcamp Certified &mdash; Yayasan
+                      Anak Bangsa Bisa</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-primary"></i>
+                    <span>HTML &amp; CSS Course &mdash; By Progate</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-primary"></i>
+                    <span>JavaScript Course &mdash; By Progate</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-check text-primary"></i>
+                    <span>Git Course &mdash; By Progate</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -624,7 +602,7 @@
           data-aos-duration="1000"
           data-aos-offset="10"
         >
-          <a href="dist/files/Cv-aria.pdf" download>
+          <a href="dist/files/Aria Sena - CV.pdf" download>
             <button
               class="h-16 w-44 transform rounded-xl bg-primary px-2 py-2 drop-shadow-lg transition duration-300 ease-in-out hover:-translate-y-1 hover:bg-blue-500 active:bg-blue-100"
             >
@@ -666,6 +644,7 @@
               class="mb-2 text-2xl leading-normal sm:mb-10 sm:leading-relaxed md:text-lg lg:text-3xl"
               data-aos="fade-right"
               data-aos-duration="1000"
+              data-aos-offset="-1200"
             >
               "Embrace challenges, chase dreams, and let your passion ignite a
               brighter tomorrow."
@@ -675,6 +654,76 @@
           <div class="ml-0 md:ml-0 lg:w-2/3">
             <div class="container mx-auto h-full w-full">
               <div class="mx-auto flex grid-cols-9 flex-col p-2 md:grid">
+                <!-- pengalaman 0 - PT Trias Sentosa -->
+                <div class="flex md:contents">
+                  <div class="relative col-start-5 col-end-6 mr-5 md:mx-auto">
+                    <div class="flex h-full w-6 items-center justify-center">
+                      <div
+                        class="pointer-events-none h-full w-2 rounded-t-lg bg-[#2F4858]"
+                      ></div>
+                    </div>
+                    <div
+                      class="absolute top-1/2 -mt-3 h-6 w-6 rounded-full bg-[#F4B266] shadow"
+                    ></div>
+                  </div>
+                  <div
+                    class="group col-start-6 col-end-10 my-4 mr-auto cursor-pointer rounded-xl p-4 duration-500 hover:bg-[#61D3BA] hover:shadow-xl hover:shadow-neutral-300/40 dark:hover:bg-[#458b7c] dark:hover:shadow-neutral-500/40"
+                    data-modal-target="Modal-pengalaman0"
+                    data-modal-toggle="Modal-pengalaman0"
+                    data-aos="zoom-in-right"
+                    data-aos-duration="1500"
+                    data-aos-offset="200"
+                  >
+                    <p
+                      class="text-base font-bold uppercase text-slate-900 md:text-xl lg:text-2xl"
+                    >
+                      IT Infrastructure & Support Supervisor
+                    </p>
+                    <p class="-mt-1 mb-3 text-slate-600">
+                      Full-time | Professional
+                    </p>
+                    <p
+                      class="line-clamp-6 overflow-auto pb-3 text-justify text-base leading-snug tracking-wide text-slate-900 md:line-clamp-5 md:overflow-auto lg:line-clamp-[7] lg:overflow-auto"
+                    >
+                      Managing IT infrastructure and support for 100-150 on-site
+                      users at PT Trias Sentosa TBK. Administering Microsoft 365
+                      services for 1000+ users, maintaining IT assets, managing
+                      Active Directory and network systems, and ensuring
+                      security and availability across the organization.
+                    </p>
+                    <div class="my-2 pt-2 sm:my-0">
+                      <span
+                        class="mr-2 rounded-full bg-blue-600 px-2.5 py-0.5 text-xs font-bold text-neutral-100 sm:font-semibold"
+                        >MICROSOFT 365
+                      </span>
+                      <span
+                        class="mr-2 rounded-full bg-indigo-600 px-2.5 py-0.5 text-xs font-bold text-neutral-100 sm:font-semibold"
+                        >ACTIVE DIRECTORY
+                      </span>
+                      <span
+                        class="mr-2 rounded-full bg-cyan-600 px-2.5 py-0.5 text-xs font-bold text-neutral-100 sm:font-semibold"
+                        >NETWORK
+                      </span>
+                      <span
+                        class="mr-2 rounded-full bg-violet-600 px-2.5 py-0.5 text-xs font-bold text-neutral-100 sm:font-semibold"
+                        >SECURITY
+                      </span>
+                      <span
+                        class="mr-2 rounded-full bg-slate-600 px-2.5 py-0.5 text-xs font-bold text-neutral-100 sm:font-semibold"
+                        >ITSM
+                      </span>
+                    </div>
+                    <p
+                      class="flex items-center justify-end gap-x-2 pt-5 font-medium text-slate-900"
+                    >
+                      Read More
+                      <i
+                        class="fa-solid fa-arrow-right duration-300 group-hover:translate-x-1"
+                      ></i>
+                    </p>
+                  </div>
+                </div>
+
                 <!-- pengalaman 1 -->
                 <div class="flex flex-row-reverse md:contents">
                   <div
@@ -689,7 +738,9 @@
                     >
                       Software Engineer
                     </p>
-                    <p class="-mt-1 mb-3 text-slate-600">Internship</p>
+                    <p class="-mt-1 mb-3 text-slate-600">
+                      Internship (Aug - Dec 2022)
+                    </p>
                     <p
                       class="line-clamp-6 overflow-auto pb-3 text-justify text-base leading-snug tracking-wide text-slate-900"
                     >
@@ -732,7 +783,7 @@
                   <div class="relative col-start-5 col-end-5 md:mx-auto">
                     <div class="flex h-full w-6 items-center justify-center">
                       <div
-                        class="pointer-events-none h-full w-2 rounded-t-lg bg-[#2F4858]"
+                        class="pointer-events-none h-full w-2 bg-[#2F4858]"
                       ></div>
                     </div>
                     <div
@@ -767,7 +818,7 @@
                       Frontend Engineer
                     </p>
                     <p class="-mt-1 mb-3 text-slate-600">
-                      Internship | Bootcamp
+                      Bootcamp (Feb - Aug 2022)
                     </p>
                     <p
                       class="line-clamp-6 overflow-auto pb-3 text-justify text-base leading-snug tracking-wide text-slate-900 md:line-clamp-5 md:overflow-auto lg:line-clamp-[7] lg:overflow-auto"
@@ -824,7 +875,9 @@
                     >
                       IT SUPPORT
                     </p>
-                    <p class="-mt-1 mb-3 text-slate-600">Internship</p>
+                    <p class="-mt-1 mb-3 text-slate-600">
+                      Internship (Jun - Dec 2018)
+                    </p>
                     <p
                       class="line-clamp-6 overflow-auto pb-3 text-justify text-base leading-snug tracking-wide text-slate-900 md:line-clamp-5 md:overflow-auto lg:line-clamp-none"
                     >
@@ -912,6 +965,111 @@
     </section>
     <!--timeline section end-->
 
+    <!-- modal pengalaman 0 -->
+    <div
+      id="Modal-pengalaman0"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-3rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
+    >
+      <div class="relative max-h-full w-full max-w-2xl">
+        <!-- Modal content -->
+        <div class="relative rounded-lg bg-white shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div
+            class="flex items-start justify-between rounded-t border-b p-2 dark:border-gray-600 md:p-4"
+          >
+            <div class="flex-col">
+              <p
+                class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl"
+              >
+                IT Infrastructure & Support Supervisor
+              </p>
+              <p class="-mt-1 text-slate-600">PT Trias Sentosa TBK.</p>
+              <p class="text-slate-600">November 2023 - Present</p>
+            </div>
+
+            <button
+              type="button"
+              class="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-hide="Modal-pengalaman0"
+            >
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="space-y-6 p-6 text-justify">
+            <p class="indent-8 text-base leading-relaxed text-gray-600">
+              Provide IT support to approximately 100–150 on-site users and
+              management, handling hardware, software, peripheral, and device
+              issues through an IT Service Management (ITSM) ticketing system
+              and urgent support requests.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Support approximately 100–150 on-site users in daily IT
+              operations, ensuring timely resolution of technical issues and
+              maintaining service availability.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Administer Microsoft 365 services for more than 1,000 users,
+              including user accounts, email services, licensing, access
+              management, and virtual conferencing accounts.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Maintain IT assets and user devices through preventive
+              maintenance, inventory tracking, and device lifecycle management.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Manage core IT infrastructure, including Active Directory,
+              Synology NAS, and office network systems.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Monitor network performance and availability using MikroTik and
+              Zabbix to ensure reliable connectivity and infrastructure
+              operations.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Configure and manage IT security systems, including firewalls,
+              antivirus solutions, and endpoint security controls.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Coordinate with ISPs and IT vendors for infrastructure
+              maintenance, technical troubleshooting, and service improvement
+              initiatives.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Develop and maintain technical documentation and Standard
+              Operating Procedures (SOPs) to ensure operational consistency and
+              knowledge continuity.
+            </p>
+            <p class="text-base leading-relaxed text-gray-600">
+              - Coordinate IT support and technical requirements for company
+              events and operational activities, ensuring infrastructure and
+              equipment are properly prepared and available.
+            </p>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center space-x-2 rounded-b border-t border-gray-200 p-6 dark:border-gray-600"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- modal 0 end -->
+
     <!-- modal pengalaman 1 -->
     <div
       id="Modal-pengalaman1"
@@ -933,7 +1091,7 @@
                 Software Engineer Internship
               </p>
               <p class="-mt-1 text-slate-600">PT LAPI ITB</p>
-              <p class="text-slate-600">Agu - Dec 2022</p>
+              <p class="text-slate-600">Aug - Dec 2022</p>
             </div>
 
             <button
@@ -975,7 +1133,8 @@
               - Software testing (OS testing, troubleshooting)
             </p>
             <p class="text-base leading-relaxed text-gray-600">
-              - Making dummy website IOT dashboards with firebase
+              - Built and programmed an IoT Dashboard Website integrated with
+              the Raspberry Pi module.
             </p>
 
             <!-- <img
@@ -1011,10 +1170,10 @@
               <p
                 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl"
               >
-                Software Engineer Internship
+                Front-End Engineer Bootcamp
               </p>
               <p class="-mt-1 text-slate-600">YABB-GOTO</p>
-              <p class="text-slate-600">Feb - Agu 2022</p>
+              <p class="text-slate-600">Feb - Aug 2022</p>
             </div>
             <button
               type="button"
@@ -1126,7 +1285,7 @@
                 IT Support
               </p>
               <p class="-mt-1 text-slate-600">DJP Jawa Timur III</p>
-              <p class="text-slate-600">Agu - Dec 2017</p>
+              <p class="text-slate-600">Jun - Dec 2018</p>
             </div>
             <button
               type="button"
@@ -1175,163 +1334,1560 @@
     <!-- modal 3 end -->
     <!-- timeline section end -->
 
-    <!-- section portfolio  -->
-    <section class="px-5 text-dark dark:text-white sm:px-10" id="portfolio">
-      <h2
-        class="mt-10 py-20 text-center text-4xl font-bold tracking-widest sm:py-0 sm:pb-20 sm:text-7xl"
+    <!-- section skills -->
+    <section class="px-5 text-dark dark:text-white sm:px-10" id="skills">
+      <!-- skills header / hero -->
+      <div
+        class="relative mx-auto mb-12 max-w-6xl"
         data-aos="fade-down"
         data-aos-duration="1500"
       >
-        My Portfolio
-      </h2>
-      <p class="py-6 text-slate-500 dark:text-slate-300">
-        * Click / Hover Picture To See More Detail
-      </p>
-      <div class="columns-1 gap-12 sm:columns-3">
-        <a
-          href="https://ariast390.github.io/Learning-Code/halodok/index.html"
-          target="_blank"
-        >
+        <!-- decorative blur -->
+        <div
+          class="pointer-events-none absolute -top-10 left-1/4 h-72 w-72 rounded-full bg-primary/10 blur-3xl"
+        ></div>
+        <div
+          class="pointer-events-none absolute right-5 top-8 h-56 w-56 rounded-full bg-third/20 blur-2xl dark:bg-third/10"
+        ></div>
+
+        <div class="relative z-10 flex flex-col gap-6">
           <div
-            class="relative mb-6 cursor-pointer rounded-lg border-2 dark:border-none"
-            data-aos="flip-right"
-            data-aos-duration="1500"
-            data-aos-offset="200"
+            class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
           >
-            <img
-              class="aspect-auto w-full rounded-lg"
-              src="dist/img/project-img/Bootstrap demo1.png"
-              alt="Project Slicing challenge HolaDok for practice image"
-            />
-            <div
-              class="absolute inset-0 rounded-lg bg-black opacity-0 transition-opacity duration-500 hover:opacity-75"
-            >
-              <div class="flex h-full flex-col items-center justify-center">
-                <p
-                  class="p-3 text-center text-lg font-semibold text-white sm:p-0"
+            <div class="max-w-2xl">
+              <span
+                class="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary dark:bg-primary/20"
+              >
+                <span class="relative flex h-2 w-2">
+                  <span
+                    class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex h-2 w-2 rounded-full bg-primary"
+                  ></span>
+                </span>
+                Skills & Competencies
+              </span>
+              <h2 class="mt-3 text-4xl font-bold tracking-widest sm:text-6xl">
+                Technical & Professional Expertise<span class="text-primary"
+                  >.</span
                 >
-                  Slicing challenge HolaDok for practice with Bootstrap
-                </p>
-              </div>
+              </h2>
+              <p class="mt-3 text-slate-500 dark:text-slate-300">
+                A comprehensive set of qualifications spanning IT infrastructure
+                operations, cloud & collaboration tooling, network & security,
+                and hands-on web development practice — backed by strong
+                collaboration and problem-solving strengths.
+              </p>
             </div>
-          </div>
-        </a>
 
-        <div
-          class="relative hidden sm:block"
-          data-aos="flip-right"
-          data-aos-duration="1500"
-          data-aos-offset="200"
-        >
-          <img
-            class="mb-6 aspect-video w-full rounded-lg"
-            src="https://picsum.photos/500/300?random=1"
-            alt="Project Coming soon 1"
-          />
-          <div
-            class="absolute inset-0 rounded-lg bg-black opacity-0 transition-opacity duration-500 hover:opacity-75"
-          >
-            <div class="flex h-full items-center justify-center">
-              <h3 class="text-lg font-semibold text-white">
-                Coming Soon Project
-              </h3>
-            </div>
-          </div>
-        </div>
-
-        <a
-          href="https://ariast390.github.io/Learning-Code/twitter%20status/twitter.html"
-          target="_blank"
-        >
-          <div
-            class="relative mb-6"
-            data-aos="flip-right"
-            data-aos-duration="1500"
-            data-aos-offset="200"
-          >
-            <img
-              class="aspect-video w-full rounded-lg"
-              src="dist/img/project-img/twitter-card.png"
-              alt="Twitter Card Project Image"
-            />
-            <div
-              class="absolute inset-0 rounded-lg bg-black opacity-0 transition-opacity duration-500 hover:opacity-75"
+            <!-- copy summary button -->
+            <button
+              type="button"
+              id="copy-summary-btn"
+              onclick="copySkillsSummary()"
+              class="group inline-flex w-fit items-center gap-2 self-start rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-dark shadow-sm transition-all hover:shadow-md dark:bg-gray-700 dark:text-white md:self-auto"
             >
-              <div class="flex h-full items-center justify-center">
-                <h3 class="text-lg font-semibold text-white">
-                  Twitter Card Project
-                </h3>
-              </div>
-            </div>
+              <i
+                class="fa-solid fa-copy text-primary transition-transform group-hover:rotate-6"
+              ></i>
+              Copy Skills Summary
+              <span
+                id="copy-toast"
+                class="ml-1 hidden rounded-full bg-primary/10 px-2 py-0.5 text-xs font-bold text-primary"
+                >Copied!</span
+              >
+            </button>
           </div>
-        </a>
 
-        <div
-          class="relative"
-          data-aos="flip-right"
-          data-aos-duration="1500"
-          data-aos-offset="200"
-        >
-          <img
-            class="mb-6 aspect-square w-full rounded-lg"
-            src="https://picsum.photos/500/300?random=4"
-            alt="Project Coming soon 2"
-          />
+          <!-- filter & search toolbar -->
           <div
-            class="absolute inset-0 rounded-lg bg-black opacity-0 transition-opacity duration-500 hover:opacity-75"
+            class="flex flex-col gap-3 rounded-xl bg-gray-100 p-3 shadow-sm dark:bg-gray-800 lg:flex-row lg:items-center lg:justify-between"
           >
-            <div class="flex h-full items-center justify-center">
-              <h3 class="text-lg font-semibold text-white">
-                Coming Soon Project
-              </h3>
+            <div
+              id="filter-container"
+              class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0"
+            >
+              <button
+                type="button"
+                onclick="filterSkillCategory('all', this)"
+                class="filter-pill shrink-0 rounded-lg bg-primary px-4 py-1.5 text-sm font-semibold text-white shadow-sm transition-all"
+              >
+                All <span class="ml-1 opacity-80">(44)</span>
+              </button>
+              <button
+                type="button"
+                onclick="filterSkillCategory('hard', this)"
+                class="filter-pill shrink-0 rounded-lg bg-white px-4 py-1.5 text-sm font-semibold text-slate-500 shadow-sm transition-all hover:text-dark dark:bg-gray-700 dark:text-slate-300 dark:hover:text-white"
+              >
+                Hard Skills <span class="ml-1 opacity-70">(28)</span>
+              </button>
+              <button
+                type="button"
+                onclick="filterSkillCategory('soft', this)"
+                class="filter-pill shrink-0 rounded-lg bg-white px-4 py-1.5 text-sm font-semibold text-slate-500 shadow-sm transition-all hover:text-dark dark:bg-gray-700 dark:text-slate-300 dark:hover:text-white"
+              >
+                Soft Skills <span class="ml-1 opacity-70">(16)</span>
+              </button>
+              <button
+                type="button"
+                onclick="filterSkillCategory('infra', this)"
+                class="filter-pill shrink-0 rounded-lg bg-white px-4 py-1.5 text-sm font-semibold text-slate-500 shadow-sm transition-all hover:text-dark dark:bg-gray-700 dark:text-slate-300 dark:hover:text-white"
+              >
+                Tools &amp; Infra <span class="ml-1 opacity-70">(18)</span>
+              </button>
             </div>
-          </div>
-        </div>
-        <div
-          class="relative"
-          data-aos="flip-right"
-          data-aos-duration="1500"
-          data-aos-offset="200"
-        >
-          <img
-            class="mb-6 aspect-square w-full rounded-lg"
-            src="https://picsum.photos/500/300?random=5"
-            alt="Project Coming soon 3"
-          />
-          <div
-            class="absolute inset-0 rounded-lg bg-black opacity-0 transition-opacity duration-500 hover:opacity-75"
-          >
-            <div class="flex h-full items-center justify-center">
-              <h3 class="text-lg font-semibold text-white">
-                Coming Soon Project
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div
-          class="relative"
-          data-aos="flip-right"
-          data-aos-duration="1500"
-          data-aos-offset="200"
-        >
-          <img
-            class="mb-6 aspect-video w-full rounded-lg"
-            src="https://picsum.photos/500/300?random=6"
-            alt="Project Coming soon 4"
-          />
-          <div
-            class="absolute inset-0 rounded-lg bg-black opacity-0 transition-opacity duration-500 hover:opacity-75"
-          >
-            <div class="flex h-full items-center justify-center">
-              <h3 class="text-lg font-semibold text-white">
-                Coming Soon Project
-              </h3>
+            <div class="relative min-w-[260px]">
+              <i
+                class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-sm text-slate-400"
+              ></i>
+              <input
+                type="text"
+                id="skill-search"
+                oninput="searchSkills(this.value)"
+                placeholder="Search a skill or tool..."
+                class="w-full rounded-lg bg-white py-1.5 pl-9 pr-4 text-sm text-dark shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white"
+              />
             </div>
           </div>
         </div>
       </div>
+
+      <!-- skills main grid (desktop only, unchanged) -->
+      <div class="mx-auto hidden max-w-6xl flex-col gap-6 lg:flex">
+        <!-- top portion: hard skills split into two columns but taking full width (12 cols grid) -->
+        <div class="grid grid-cols-1 items-start gap-6 lg:grid-cols-12">
+          <div
+            class="flex flex-col gap-6 lg:col-span-12"
+            id="hard-skills-section"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="flex flex-col gap-6 rounded-xl bg-white p-6 shadow-sm dark:bg-gray-700"
+            >
+              <div
+                class="flex items-center justify-between border-b border-gray-100 pb-3 dark:border-gray-600"
+              >
+                <h3 class="flex items-center gap-3 text-2xl font-bold">
+                  <i class="fa-solid fa-screwdriver-wrench text-primary"></i>
+                  Hard Skills &amp; Stack
+                </h3>
+                <span
+                  class="rounded-full bg-gray-100 px-3 py-1 text-xs font-bold text-primary dark:bg-gray-600"
+                  >28 Skills</span
+                >
+              </div>
+
+              <!-- grid container for the 5 categories inside single high-level container card -->
+              <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <!-- IT Support & Infrastructure -->
+                <div
+                  class="skill-category-group flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50/30 p-4 transition-all duration-200 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-800/30 dark:hover:bg-gray-800/60"
+                  data-category="hard"
+                >
+                  <div
+                    class="flex items-center justify-between border-b border-gray-100 pb-2 dark:border-gray-600"
+                  >
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-headset text-blue-600"></i>
+                      <h4
+                        class="text-md font-semibold text-slate-700 dark:text-slate-300"
+                      >
+                        IT Support &amp; Infrastructure
+                      </h4>
+                    </div>
+                    <span
+                      class="rounded bg-white px-2 py-0.5 text-xs font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                      >Operations</span
+                    >
+                  </div>
+                  <div class="flex flex-wrap gap-2 pt-1">
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="it support infrastructure troubleshooting"
+                    >
+                      <span
+                        >IT Support &amp; Infrastructure Troubleshooting</span
+                      >
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="it system deployment installation"
+                    >
+                      <span>IT System Deployment &amp; Installation</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="it asset inventory management"
+                    >
+                      <span>IT Asset &amp; Inventory Management</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="end user technical support"
+                    >
+                      <span>End-User Technical Support</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="it documentation sop management"
+                    >
+                      <span>IT Documentation &amp; SOP Management</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="user training technical guidance"
+                    >
+                      <span>User Training &amp; Technical Guidance</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cloud & Collaboration (also in hard & category infra) -->
+                <div
+                  class="skill-category-group flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50/30 p-4 transition-all duration-200 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-800/30 dark:hover:bg-gray-800/60"
+                  data-category="infra"
+                >
+                  <div
+                    class="flex items-center justify-between border-b border-gray-100 pb-2 dark:border-gray-600"
+                  >
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-cloud text-indigo-600"></i>
+                      <h4
+                        class="text-md font-semibold text-slate-700 dark:text-slate-300"
+                      >
+                        Cloud &amp; Collaboration
+                      </h4>
+                    </div>
+                    <span
+                      class="rounded bg-white px-2 py-0.5 text-xs font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                      >SaaS Systems</span
+                    >
+                  </div>
+                  <div class="flex flex-wrap gap-2 pt-1">
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="microsoft 365 admin center"
+                    >
+                      <span>Microsoft 365 Admin Center</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="microsoft entra id azure ad"
+                    >
+                      <span>Microsoft Entra ID</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="exchange online"
+                    >
+                      <span>Exchange Online</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="active directory ad"
+                    >
+                      <span>Active Directory (AD)</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="ldap"
+                    >
+                      <span>LDAP</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="synology nas"
+                    >
+                      <span>Synology NAS</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="microsoft teams zoom administration"
+                    >
+                      <span>Microsoft Teams &amp; Zoom Admin Center</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Network & Security -->
+                <div
+                  class="skill-category-group flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50/30 p-4 transition-all duration-200 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-800/30 dark:hover:bg-gray-800/60"
+                  data-category="hard"
+                >
+                  <div
+                    class="flex items-center justify-between border-b border-gray-100 pb-2 dark:border-gray-600"
+                  >
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-network-wired text-cyan-600"></i>
+                      <h4
+                        class="text-md font-semibold text-slate-700 dark:text-slate-300"
+                      >
+                        Network &amp; Security
+                      </h4>
+                    </div>
+                    <span
+                      class="rounded bg-white px-2 py-0.5 text-xs font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                      >Defenses</span
+                    >
+                  </div>
+                  <div class="flex flex-wrap gap-2 pt-1">
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="mikrotik configuration monitoring"
+                    >
+                      <span>MikroTik Configuration &amp; Monitoring</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="network troubleshooting"
+                    >
+                      <span>Network Troubleshooting</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="firewall endpoint security"
+                    >
+                      <span>Firewall &amp; Endpoint Security</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="antivirus management"
+                    >
+                      <span>Antivirus Management</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="isp vendor coordination"
+                    >
+                      <span>ISP &amp; Vendor Coordination</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Monitoring & Governance -->
+                <div
+                  class="skill-category-group flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50/30 p-4 transition-all duration-200 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-800/30 dark:hover:bg-gray-800/60"
+                  data-category="hard"
+                >
+                  <div
+                    class="flex items-center justify-between border-b border-gray-100 pb-2 dark:border-gray-600"
+                  >
+                    <div class="flex items-center gap-2">
+                      <i class="fa-solid fa-chart-line text-violet-600"></i>
+                      <h4
+                        class="text-md font-semibold text-slate-700 dark:text-slate-300"
+                      >
+                        Monitoring &amp; Governance
+                      </h4>
+                    </div>
+                    <span
+                      class="rounded bg-white px-2 py-0.5 text-xs font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                      >GRC & SLA</span
+                    >
+                  </div>
+                  <div class="flex flex-wrap gap-2 pt-1">
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="zabbix monitoring"
+                    >
+                      <span>Zabbix Monitoring</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="infrastructure monitoring incident handling"
+                    >
+                      <span
+                        >Infrastructure Monitoring &amp; Incident Handling</span
+                      >
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="it operations support"
+                    >
+                      <span>IT Operations Support</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="it governance risk compliance grc"
+                    >
+                      <span>IT Governance, Risk &amp; Compliance (GRC)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dev & Tools -->
+                <div
+                  class="skill-category-group flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50/30 p-4 transition-all duration-200 hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-800/30 dark:hover:bg-gray-800/60"
+                  data-category="infra"
+                >
+                  <div
+                    class="flex items-center justify-between border-b border-gray-100 pb-2 dark:border-gray-600"
+                  >
+                    <div class="flex items-center gap-2">
+                      <i
+                        class="fa-solid fa-code text-slate-600 dark:text-slate-300"
+                      ></i>
+                      <h4
+                        class="text-md font-semibold text-slate-700 dark:text-slate-300"
+                      >
+                        Dev &amp; Tools
+                      </h4>
+                    </div>
+                    <span
+                      class="rounded bg-white px-2 py-0.5 text-xs font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                      >Automation</span
+                    >
+                  </div>
+                  <div class="flex flex-wrap gap-2 pt-1">
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="html css javascript front-end"
+                    >
+                      <span>HTML, CSS &amp; JavaScript (Front-End)</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="mysql database"
+                    >
+                      <span>MySQL Database</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="git version control"
+                    >
+                      <span>Git Version Control</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="iot fundamentals"
+                    >
+                      <span>IoT Fundamentals</span>
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="microsoft office suite word excel powerpoint"
+                    >
+                      <span
+                        >Microsoft Office (Word, Excel &amp; PowerPoint)</span
+                      >
+                    </div>
+                    <div
+                      class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:-translate-y-0.5 dark:bg-gray-700 dark:text-white sm:text-sm sm:font-semibold"
+                      data-name="itsm"
+                    >
+                      <span>ITSM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- metric snapshot SLA bar inline in Hard Skills area -->
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+              <div
+                class="flex flex-col rounded-xl bg-white p-5 shadow-sm dark:bg-gray-700"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-500 dark:text-slate-300"
+                  >On-Site Users Supported</span
+                >
+                <span class="mt-1 text-3xl font-bold text-primary"
+                  >100-150</span
+                >
+                <span class="mt-1 text-xs text-slate-400 dark:text-slate-300/60"
+                  >Daily IT operations &amp; ITSM ticketing support</span
+                >
+              </div>
+              <div
+                class="flex flex-col rounded-xl bg-white p-5 shadow-sm dark:bg-gray-700"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-500 dark:text-slate-300"
+                  >Microsoft 365 Accounts Managed</span
+                >
+                <span class="mt-1 text-3xl font-bold text-blue-600"
+                  >1,000+</span
+                >
+                <span class="mt-1 text-xs text-slate-400 dark:text-slate-300/60"
+                  >User accounts, email, licensing &amp; access management</span
+                >
+              </div>
+              <div
+                class="flex flex-col rounded-xl bg-white p-5 shadow-sm dark:bg-gray-700"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-500 dark:text-slate-300"
+                  >IT Infrastructure Experience</span
+                >
+                <span class="mt-1 text-3xl font-bold text-violet-600"
+                  >4+ Years</span
+                >
+                <span class="mt-1 text-xs text-slate-400 dark:text-slate-300/60"
+                  >Across IT support, infrastructure &amp; supervision
+                  roles</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom portion: soft skills and core strengths mastery side-by-side (6 cols vs 6 cols grid) -->
+        <div
+          class="grid grid-cols-1 items-start gap-6 lg:grid-cols-12"
+          id="soft-skills-section"
+        >
+          <!-- soft skills card (6 columns) -->
+          <div class="flex flex-col gap-6 lg:col-span-6">
+            <div
+              class="skill-category-group flex flex-col gap-4 rounded-xl bg-white p-6 shadow-sm dark:bg-gray-700"
+              data-category="soft"
+            >
+              <div
+                class="flex items-center justify-between border-b border-gray-100 pb-3 dark:border-gray-600"
+              >
+                <h3 class="flex items-center gap-3 text-2xl font-bold">
+                  <i class="fa-solid fa-people-group text-primary"></i>
+                  Soft Skills
+                </h3>
+                <span
+                  class="rounded-full bg-gray-100 px-3 py-1 text-xs font-bold text-primary dark:bg-gray-600"
+                  >16 Skills</span
+                >
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="effective communication"
+                >
+                  <span>Effective Communication</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="leadership team coordination"
+                >
+                  <span>Leadership &amp; Team Coordination</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="problem solving troubleshooting"
+                >
+                  <span>Problem Solving &amp; Troubleshooting</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="time management"
+                >
+                  <span>Time Management</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="adaptability to change"
+                >
+                  <span>Adaptability to Change</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="attention to detail"
+                >
+                  <span>Attention to Detail</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="analytical thinking"
+                >
+                  <span>Analytical Thinking</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="stress management"
+                >
+                  <span>Stress Management</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="teamwork collaboration"
+                >
+                  <span>Teamwork &amp; Collaboration</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="professional work ethic"
+                >
+                  <span>Professional Work Ethic</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="independent working"
+                >
+                  <span>Independent Working</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="understanding others perspectives"
+                >
+                  <span>Understanding Others' Perspectives</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="user support training"
+                >
+                  <span>User Support &amp; Training</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="vendor coordination"
+                >
+                  <span>Vendor Coordination</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="operational planning coordination"
+                >
+                  <span>Operational Planning &amp; Coordination</span>
+                </div>
+                <div
+                  class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm transition-all hover:bg-primary hover:text-white dark:bg-gray-800 dark:text-white sm:text-sm sm:font-semibold"
+                  data-name="supervisory"
+                >
+                  <span>Supervisory</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- core strengths & mastery card (6 columns) -->
+          <div class="flex flex-col gap-6 lg:col-span-6">
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white p-6 shadow-sm dark:bg-gray-700"
+            >
+              <div
+                class="flex items-center justify-between border-b border-gray-100 pb-3 dark:border-gray-600"
+              >
+                <h3 class="text-2xl font-bold">Core Strengths &amp; Mastery</h3>
+                <span
+                  class="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-bold text-primary dark:bg-primary/20"
+                  >Verified</span
+                >
+              </div>
+
+              <div class="flex flex-col gap-5">
+                <!-- track 1 -->
+                <div class="flex flex-col gap-1.5">
+                  <div class="flex items-center justify-between">
+                    <span class="font-semibold text-dark dark:text-white"
+                      >IT Infrastructure &amp; Support Leadership</span
+                    >
+                    <span class="text-xs font-bold text-primary"
+                      >Since Nov 2023</span
+                    >
+                  </div>
+                  <div
+                    class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-600"
+                  >
+                    <div
+                      class="h-full rounded-full bg-primary transition-all duration-1000"
+                      style="width: 90%"
+                    ></div>
+                  </div>
+                  <p class="text-sm text-slate-500 dark:text-slate-300">
+                    Supervising day-to-day IT infrastructure &amp; support
+                    operations, coordinating troubleshooting, deployments, and
+                    SOP governance.
+                  </p>
+                </div>
+                <!-- track 2 -->
+                <div class="flex flex-col gap-1.5">
+                  <div class="flex items-center justify-between">
+                    <span class="font-semibold text-dark dark:text-white"
+                      >Network &amp; Systems Administration</span
+                    >
+                    <span class="text-xs font-bold text-blue-600"
+                      >Hands-on</span
+                    >
+                  </div>
+                  <div
+                    class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-600"
+                  >
+                    <div
+                      class="h-full rounded-full bg-blue-600 transition-all duration-1000"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                  <p class="text-sm text-slate-500 dark:text-slate-300">
+                    Configuring &amp; maintaining MikroTik networks, Active
+                    Directory, Microsoft 365, and endpoint security across
+                    multiple sites.
+                  </p>
+                </div>
+                <!-- track 3 -->
+                <div class="flex flex-col gap-1.5">
+                  <div class="flex items-center justify-between">
+                    <span class="font-semibold text-dark dark:text-white"
+                      >Monitoring &amp; Governance</span
+                    >
+                    <span class="text-xs font-bold text-violet-600"
+                      >Active</span
+                    >
+                  </div>
+                  <div
+                    class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-600"
+                  >
+                    <div
+                      class="h-full rounded-full bg-violet-600 transition-all duration-1000"
+                      style="width: 80%"
+                    ></div>
+                  </div>
+                  <p class="text-sm text-slate-500 dark:text-slate-300">
+                    Using Zabbix for infrastructure monitoring &amp; incident
+                    handling, aligned with IT governance, risk, and compliance
+                    (GRC) practices.
+                  </p>
+                </div>
+              </div>
+
+              <!-- bottom cta banner -->
+              <div
+                class="mt-1 flex items-center justify-between rounded-xl bg-primary/10 p-4 dark:bg-primary/20"
+              >
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-award text-xl text-primary"></i>
+                  <div class="flex flex-col">
+                    <span class="text-sm font-bold text-dark dark:text-white"
+                      >Continuous Learning</span
+                    >
+                    <span class="text-xs text-slate-500 dark:text-slate-300"
+                      >Always keeping up with the latest IT &amp; web
+                      standards.</span
+                    >
+                  </div>
+                </div>
+                <a
+                  href="#contact-me"
+                  class="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+                >
+                  Get In Touch
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- skills mobile accordion (mobile/tablet only, hidden on lg+)   -->
+      <!-- ============================================================ -->
+      <div class="mx-auto flex max-w-6xl flex-col gap-4 lg:hidden">
+        <div id="skills-accordion-l1" data-accordion="collapse">
+          <!-- L1 item: Hard Skills & Stack -->
+          <h2 id="acc-hard-heading">
+            <button
+              type="button"
+              class="flex w-full items-center justify-between gap-3 rounded-xl bg-white p-4 text-left shadow-sm dark:bg-gray-700"
+              data-accordion-target="#acc-hard-body"
+              aria-expanded="false"
+              aria-controls="acc-hard-body"
+            >
+              <span class="flex items-center gap-3 text-lg font-bold">
+                <i class="fa-solid fa-screwdriver-wrench text-primary"></i>
+                Hard Skills &amp; Stack
+              </span>
+              <span class="flex items-center gap-2">
+                <span
+                  class="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-bold text-primary dark:bg-gray-600"
+                  >28</span
+                >
+                <i
+                  data-accordion-icon
+                  class="fa-solid fa-chevron-down shrink-0 text-sm text-slate-400 transition-transform duration-300"
+                ></i>
+              </span>
+            </button>
+          </h2>
+          <div
+            id="acc-hard-body"
+            class="hidden"
+            aria-labelledby="acc-hard-heading"
+          >
+            <div
+              class="flex flex-col gap-4 rounded-xl bg-white p-4 pt-2 dark:bg-gray-700"
+            >
+              <!-- L2 nested accordion for hard-skill sub-categories -->
+              <div
+                id="skills-accordion-l2-hard"
+                data-accordion="collapse"
+                class="flex flex-col gap-3"
+              >
+                <!-- IT Support & Infrastructure -->
+                <div
+                  class="skill-category-group overflow-hidden rounded-xl border border-gray-100 bg-gray-50/30 dark:border-gray-600 dark:bg-gray-800/30"
+                  data-category="hard"
+                >
+                  <h3 id="acc-h2-itsupport-heading">
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between gap-2 p-3 text-left"
+                      data-accordion-target="#acc-h2-itsupport-body"
+                      aria-expanded="false"
+                      aria-controls="acc-h2-itsupport-body"
+                    >
+                      <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-headset text-blue-600"></i>
+                        <span
+                          class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                          >IT Support &amp; Infrastructure</span
+                        >
+                      </span>
+                      <span class="flex items-center gap-2">
+                        <span
+                          class="rounded bg-white px-2 py-0.5 text-[10px] font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                          >6</span
+                        >
+                        <i
+                          data-accordion-icon
+                          class="fa-solid fa-chevron-down shrink-0 text-xs text-slate-400 transition-transform duration-300"
+                        ></i>
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    id="acc-h2-itsupport-body"
+                    class="hidden"
+                    aria-labelledby="acc-h2-itsupport-heading"
+                  >
+                    <div class="flex flex-wrap gap-2 px-3 pb-3 pt-1">
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="it support infrastructure troubleshooting"
+                      >
+                        <span
+                          >IT Support &amp; Infrastructure Troubleshooting</span
+                        >
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="it system deployment installation"
+                      >
+                        <span>IT System Deployment &amp; Installation</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="it asset inventory management"
+                      >
+                        <span>IT Asset &amp; Inventory Management</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="end user technical support"
+                      >
+                        <span>End-User Technical Support</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="it documentation sop management"
+                      >
+                        <span>IT Documentation &amp; SOP Management</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="user training technical guidance"
+                      >
+                        <span>User Training &amp; Technical Guidance</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cloud & Collaboration -->
+                <div
+                  class="skill-category-group overflow-hidden rounded-xl border border-gray-100 bg-gray-50/30 dark:border-gray-600 dark:bg-gray-800/30"
+                  data-category="infra"
+                >
+                  <h3 id="acc-h2-cloud-heading">
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between gap-2 p-3 text-left"
+                      data-accordion-target="#acc-h2-cloud-body"
+                      aria-expanded="false"
+                      aria-controls="acc-h2-cloud-body"
+                    >
+                      <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-cloud text-indigo-600"></i>
+                        <span
+                          class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                          >Cloud &amp; Collaboration</span
+                        >
+                      </span>
+                      <span class="flex items-center gap-2">
+                        <span
+                          class="rounded bg-white px-2 py-0.5 text-[10px] font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                          >7</span
+                        >
+                        <i
+                          data-accordion-icon
+                          class="fa-solid fa-chevron-down shrink-0 text-xs text-slate-400 transition-transform duration-300"
+                        ></i>
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    id="acc-h2-cloud-body"
+                    class="hidden"
+                    aria-labelledby="acc-h2-cloud-heading"
+                  >
+                    <div class="flex flex-wrap gap-2 px-3 pb-3 pt-1">
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="microsoft 365 admin center"
+                      >
+                        <span>Microsoft 365 Admin Center</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="microsoft entra id azure ad"
+                      >
+                        <span>Microsoft Entra ID</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="exchange online"
+                      >
+                        <span>Exchange Online</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="active directory ad"
+                      >
+                        <span>Active Directory (AD)</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="ldap"
+                      >
+                        <span>LDAP</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="synology nas"
+                      >
+                        <span>Synology NAS</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="microsoft teams zoom administration"
+                      >
+                        <span>Microsoft Teams &amp; Zoom Admin Center</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Network & Security -->
+                <div
+                  class="skill-category-group overflow-hidden rounded-xl border border-gray-100 bg-gray-50/30 dark:border-gray-600 dark:bg-gray-800/30"
+                  data-category="hard"
+                >
+                  <h3 id="acc-h2-network-heading">
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between gap-2 p-3 text-left"
+                      data-accordion-target="#acc-h2-network-body"
+                      aria-expanded="false"
+                      aria-controls="acc-h2-network-body"
+                    >
+                      <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-network-wired text-cyan-600"></i>
+                        <span
+                          class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                          >Network &amp; Security</span
+                        >
+                      </span>
+                      <span class="flex items-center gap-2">
+                        <span
+                          class="rounded bg-white px-2 py-0.5 text-[10px] font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                          >5</span
+                        >
+                        <i
+                          data-accordion-icon
+                          class="fa-solid fa-chevron-down shrink-0 text-xs text-slate-400 transition-transform duration-300"
+                        ></i>
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    id="acc-h2-network-body"
+                    class="hidden"
+                    aria-labelledby="acc-h2-network-heading"
+                  >
+                    <div class="flex flex-wrap gap-2 px-3 pb-3 pt-1">
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="mikrotik configuration monitoring"
+                      >
+                        <span>MikroTik Configuration &amp; Monitoring</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="network troubleshooting"
+                      >
+                        <span>Network Troubleshooting</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="firewall endpoint security"
+                      >
+                        <span>Firewall &amp; Endpoint Security</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="antivirus management"
+                      >
+                        <span>Antivirus Management</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="isp vendor coordination"
+                      >
+                        <span>ISP &amp; Vendor Coordination</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Monitoring & Governance -->
+                <div
+                  class="skill-category-group overflow-hidden rounded-xl border border-gray-100 bg-gray-50/30 dark:border-gray-600 dark:bg-gray-800/30"
+                  data-category="hard"
+                >
+                  <h3 id="acc-h2-monitoring-heading">
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between gap-2 p-3 text-left"
+                      data-accordion-target="#acc-h2-monitoring-body"
+                      aria-expanded="false"
+                      aria-controls="acc-h2-monitoring-body"
+                    >
+                      <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-chart-line text-violet-600"></i>
+                        <span
+                          class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                          >Monitoring &amp; Governance</span
+                        >
+                      </span>
+                      <span class="flex items-center gap-2">
+                        <span
+                          class="rounded bg-white px-2 py-0.5 text-[10px] font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                          >4</span
+                        >
+                        <i
+                          data-accordion-icon
+                          class="fa-solid fa-chevron-down shrink-0 text-xs text-slate-400 transition-transform duration-300"
+                        ></i>
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    id="acc-h2-monitoring-body"
+                    class="hidden"
+                    aria-labelledby="acc-h2-monitoring-heading"
+                  >
+                    <div class="flex flex-wrap gap-2 px-3 pb-3 pt-1">
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="zabbix monitoring"
+                      >
+                        <span>Zabbix Monitoring</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="infrastructure monitoring incident handling"
+                      >
+                        <span
+                          >Infrastructure Monitoring &amp; Incident
+                          Handling</span
+                        >
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="it operations support"
+                      >
+                        <span>IT Operations Support</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="it governance risk compliance grc"
+                      >
+                        <span>IT Governance, Risk &amp; Compliance (GRC)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dev & Tools -->
+                <div
+                  class="skill-category-group overflow-hidden rounded-xl border border-gray-100 bg-gray-50/30 dark:border-gray-600 dark:bg-gray-800/30"
+                  data-category="infra"
+                >
+                  <h3 id="acc-h2-devtools-heading">
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between gap-2 p-3 text-left"
+                      data-accordion-target="#acc-h2-devtools-body"
+                      aria-expanded="false"
+                      aria-controls="acc-h2-devtools-body"
+                    >
+                      <span class="flex items-center gap-2">
+                        <i
+                          class="fa-solid fa-code text-slate-600 dark:text-slate-300"
+                        ></i>
+                        <span
+                          class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                          >Dev &amp; Tools</span
+                        >
+                      </span>
+                      <span class="flex items-center gap-2">
+                        <span
+                          class="rounded bg-white px-2 py-0.5 text-[10px] font-medium text-slate-500 shadow-sm dark:bg-gray-700 dark:text-slate-300"
+                          >6</span
+                        >
+                        <i
+                          data-accordion-icon
+                          class="fa-solid fa-chevron-down shrink-0 text-xs text-slate-400 transition-transform duration-300"
+                        ></i>
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    id="acc-h2-devtools-body"
+                    class="hidden"
+                    aria-labelledby="acc-h2-devtools-heading"
+                  >
+                    <div class="flex flex-wrap gap-2 px-3 pb-3 pt-1">
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="html css javascript front-end"
+                      >
+                        <span>HTML, CSS &amp; JavaScript (Front-End)</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="mysql database"
+                      >
+                        <span>MySQL Database</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="git version control"
+                      >
+                        <span>Git Version Control</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="iot fundamentals"
+                      >
+                        <span>IoT Fundamentals</span>
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="microsoft office suite word excel powerpoint"
+                      >
+                        <span
+                          >Microsoft Office (Word, Excel &amp; PowerPoint)</span
+                        >
+                      </div>
+                      <div
+                        class="skill-item flex items-center gap-2 rounded-lg bg-white px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-700 dark:text-white"
+                        data-name="itsm"
+                      >
+                        <span>ITSM</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- metric snapshot cards (kept, stacked) -->
+              <div class="grid grid-cols-1 gap-3">
+                <div
+                  class="flex flex-col rounded-xl bg-gray-50/60 p-4 dark:bg-gray-800/40"
+                >
+                  <span
+                    class="text-xs font-semibold text-slate-500 dark:text-slate-300"
+                    >On-Site Users Supported</span
+                  >
+                  <span class="mt-1 text-2xl font-bold text-primary"
+                    >100-150</span
+                  >
+                  <span
+                    class="mt-1 text-xs text-slate-400 dark:text-slate-300/60"
+                    >Daily IT operations &amp; ITSM ticketing support</span
+                  >
+                </div>
+                <div
+                  class="flex flex-col rounded-xl bg-gray-50/60 p-4 dark:bg-gray-800/40"
+                >
+                  <span
+                    class="text-xs font-semibold text-slate-500 dark:text-slate-300"
+                    >Microsoft 365 Accounts Managed</span
+                  >
+                  <span class="mt-1 text-2xl font-bold text-blue-600"
+                    >1,000+</span
+                  >
+                  <span
+                    class="mt-1 text-xs text-slate-400 dark:text-slate-300/60"
+                    >User accounts, email, licensing &amp; access
+                    management</span
+                  >
+                </div>
+                <div
+                  class="flex flex-col rounded-xl bg-gray-50/60 p-4 dark:bg-gray-800/40"
+                >
+                  <span
+                    class="text-xs font-semibold text-slate-500 dark:text-slate-300"
+                    >IT Infrastructure Experience</span
+                  >
+                  <span class="mt-1 text-2xl font-bold text-violet-600"
+                    >4+ Years</span
+                  >
+                  <span
+                    class="mt-1 text-xs text-slate-400 dark:text-slate-300/60"
+                    >Across IT support, infrastructure &amp; supervision
+                    roles</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- L1 item: Soft Skills -->
+          <h2 id="acc-soft-heading">
+            <button
+              type="button"
+              class="flex w-full items-center justify-between gap-3 rounded-xl bg-white p-4 text-left shadow-sm dark:bg-gray-700"
+              data-accordion-target="#acc-soft-body"
+              aria-expanded="false"
+              aria-controls="acc-soft-body"
+            >
+              <span class="flex items-center gap-3 text-lg font-bold">
+                <i class="fa-solid fa-people-group text-primary"></i>
+                Soft Skills
+              </span>
+              <span class="flex items-center gap-2">
+                <span
+                  class="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-bold text-primary dark:bg-gray-600"
+                  >16</span
+                >
+                <i
+                  data-accordion-icon
+                  class="fa-solid fa-chevron-down shrink-0 text-sm text-slate-400 transition-transform duration-300"
+                ></i>
+              </span>
+            </button>
+          </h2>
+          <div
+            id="acc-soft-body"
+            class="hidden"
+            aria-labelledby="acc-soft-heading"
+          >
+            <div
+              class="skill-category-group flex flex-wrap gap-2 rounded-xl bg-white p-4 pt-2 dark:bg-gray-700"
+              data-category="soft"
+            >
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="effective communication"
+              >
+                <span>Effective Communication</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="leadership team coordination"
+              >
+                <span>Leadership &amp; Team Coordination</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="problem solving troubleshooting"
+              >
+                <span>Problem Solving &amp; Troubleshooting</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="time management"
+              >
+                <span>Time Management</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="adaptability to change"
+              >
+                <span>Adaptability to Change</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="attention to detail"
+              >
+                <span>Attention to Detail</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="analytical thinking"
+              >
+                <span>Analytical Thinking</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="stress management"
+              >
+                <span>Stress Management</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="teamwork collaboration"
+              >
+                <span>Teamwork &amp; Collaboration</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="professional work ethic"
+              >
+                <span>Professional Work Ethic</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="independent working"
+              >
+                <span>Independent Working</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="understanding others perspectives"
+              >
+                <span>Understanding Others' Perspectives</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="user support training"
+              >
+                <span>User Support &amp; Training</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="vendor coordination"
+              >
+                <span>Vendor Coordination</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="operational planning coordination"
+              >
+                <span>Operational Planning &amp; Coordination</span>
+              </div>
+              <div
+                class="skill-item flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2 text-xs font-bold text-dark shadow-sm dark:bg-gray-800 dark:text-white"
+                data-name="supervisory"
+              >
+                <span>Supervisory</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- L1 item: Core Strengths & Mastery -->
+          <h2 id="acc-core-heading">
+            <button
+              type="button"
+              class="flex w-full items-center justify-between gap-3 rounded-xl bg-white p-4 text-left shadow-sm dark:bg-gray-700"
+              data-accordion-target="#acc-core-body"
+              aria-expanded="false"
+              aria-controls="acc-core-body"
+            >
+              <span class="flex items-center gap-3 text-lg font-bold">
+                <i class="fa-solid fa-award text-primary"></i>
+                Core Strengths &amp; Mastery
+              </span>
+              <i
+                data-accordion-icon
+                class="fa-solid fa-chevron-down shrink-0 text-sm text-slate-400 transition-transform duration-300"
+              ></i>
+            </button>
+          </h2>
+          <div
+            id="acc-core-body"
+            class="hidden"
+            aria-labelledby="acc-core-heading"
+          >
+            <div
+              class="flex flex-col gap-5 rounded-xl bg-white p-4 pt-2 dark:bg-gray-700"
+            >
+              <div class="flex flex-col gap-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-dark dark:text-white"
+                    >IT Infrastructure &amp; Support Leadership</span
+                  >
+                  <span class="text-xs font-bold text-primary"
+                    >Since Nov 2023</span
+                  >
+                </div>
+                <div
+                  class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-600"
+                >
+                  <div
+                    class="h-full rounded-full bg-primary"
+                    style="width: 90%"
+                  ></div>
+                </div>
+                <p class="text-sm text-slate-500 dark:text-slate-300">
+                  Supervising day-to-day IT infrastructure &amp; support
+                  operations, coordinating troubleshooting, deployments, and SOP
+                  governance.
+                </p>
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-dark dark:text-white"
+                    >Network &amp; Systems Administration</span
+                  >
+                  <span class="text-xs font-bold text-blue-600">Hands-on</span>
+                </div>
+                <div
+                  class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-600"
+                >
+                  <div
+                    class="h-full rounded-full bg-blue-600"
+                    style="width: 85%"
+                  ></div>
+                </div>
+                <p class="text-sm text-slate-500 dark:text-slate-300">
+                  Configuring &amp; maintaining MikroTik networks, Active
+                  Directory, Microsoft 365, and endpoint security across
+                  multiple sites.
+                </p>
+              </div>
+              <div class="flex flex-col gap-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-dark dark:text-white"
+                    >Monitoring &amp; Governance</span
+                  >
+                  <span class="text-xs font-bold text-violet-600">Active</span>
+                </div>
+                <div
+                  class="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-600"
+                >
+                  <div
+                    class="h-full rounded-full bg-violet-600"
+                    style="width: 80%"
+                  ></div>
+                </div>
+                <p class="text-sm text-slate-500 dark:text-slate-300">
+                  Using Zabbix for infrastructure monitoring &amp; incident
+                  handling, aligned with IT governance, risk, and compliance
+                  (GRC) practices.
+                </p>
+              </div>
+
+              <div
+                class="mt-1 flex items-center justify-between rounded-xl bg-primary/10 p-4 dark:bg-primary/20"
+              >
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-award text-xl text-primary"></i>
+                  <div class="flex flex-col">
+                    <span class="text-sm font-bold text-dark dark:text-white"
+                      >Continuous Learning</span
+                    >
+                    <span class="text-xs text-slate-500 dark:text-slate-300"
+                      >Always keeping up with the latest IT &amp; web
+                      standards.</span
+                    >
+                  </div>
+                </div>
+                <a
+                  href="#contact-me"
+                  class="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+                >
+                  Get In Touch
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- web dev practice projects -->
+      <div
+        class="mx-auto mt-16 max-w-6xl"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h3 class="mb-2 flex items-center gap-3 text-2xl font-bold sm:text-3xl">
+          <i class="fa-solid fa-laptop-code text-primary"></i>
+          Web Dev Practice Projects
+        </h3>
+        <p class="py-4 text-slate-500 dark:text-slate-300">
+          * Click / Hover Picture To See More Detail
+        </p>
+        <div class="columns-1 gap-12 sm:columns-2">
+          <a
+            href="https://ariast390.github.io/Learning-Code/halodok/index.html"
+            target="_blank"
+          >
+            <div
+              class="relative mb-6 cursor-pointer rounded-lg border-2 dark:border-none"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+              data-aos-offset="200"
+            >
+              <img
+                class="aspect-auto w-full rounded-lg"
+                src="dist/img/project-img/Bootstrap demo1.png"
+                alt="Project Slicing challenge HolaDok for practice image"
+              />
+              <div
+                class="absolute inset-0 rounded-lg bg-black opacity-0 transition-opacity duration-500 hover:opacity-75"
+              >
+                <div class="flex h-full flex-col items-center justify-center">
+                  <p
+                    class="p-3 text-center text-lg font-semibold text-white sm:p-0"
+                  >
+                    Slicing challenge HolaDok for practice with Bootstrap
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://ariast390.github.io/Learning-Code/twitter%20status/twitter.html"
+            target="_blank"
+          >
+            <div
+              class="relative mb-6"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+              data-aos-offset="200"
+            >
+              <img
+                class="aspect-video w-full rounded-lg"
+                src="dist/img/project-img/twitter-card.png"
+                alt="Twitter Card Project Image"
+              />
+              <div
+                class="absolute inset-0 rounded-lg bg-black opacity-0 transition-opacity duration-500 hover:opacity-75"
+              >
+                <div class="flex h-full items-center justify-center">
+                  <h3 class="text-lg font-semibold text-white">
+                    Twitter Card Project
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
-    <!-- section portfolio end -->
+    <!-- section skills end -->
 
     <!-- modal portfolio1 -->
     <!-- <div
@@ -1377,47 +2933,241 @@
 
     <!-- section like -->
     <section
-      class="mx-0 my-16 rounded-none bg-green-100 px-5 py-10 shadow-md dark:bg-green-800 sm:mx-8 sm:rounded-xl"
+      class="shadow-card-soft relative mx-0 my-16 overflow-hidden rounded-none border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-dark sm:mx-32 sm:rounded-3xl sm:p-10"
+      data-purpose="website-feedback-widget"
     >
-      <p
-        class="pb-3 text-center text-2xl font-bold tracking-widest dark:text-white sm:py-1 sm:pb-24 sm:text-5xl"
+      <!-- Decorative Ambient Light Blobs -->
+      <div
+        class="pointer-events-none absolute -right-24 -top-24 h-60 w-60 rounded-full bg-primary/10 blur-3xl dark:bg-primary/20"
+      ></div>
+      <div
+        class="pointer-events-none absolute -bottom-24 -left-24 h-60 w-60 rounded-full bg-emerald-100/60 blur-3xl dark:bg-emerald-500/10"
+      ></div>
+
+      <!-- Top Status Pill Header -->
+      <div
+        class="relative z-10 flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-6 dark:border-slate-800"
       >
-        Do you Like My Website?
-      </p>
-      <div class="flex flex-col items-center justify-center px-16 sm:flex-row">
-        <!-- Tombol Suka dan Tidak Suka -->
         <div
-          class="my-5 flex w-full items-center justify-center gap-5 sm:order-1 sm:w-1/2"
+          class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100/80 px-3 py-1 text-xs font-semibold text-slate-600 dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-300"
         >
+          <span class="relative flex h-2 w-2">
+            <span
+              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"
+            ></span>
+            <span
+              class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"
+            ></span>
+          </span>
+          <span>Live Community Reaction</span>
+        </div>
+        <div
+          class="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-primary"
+        >
+          <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2L1 21h22L12 2zm0 4.5l7.5 13H4.5L12 6.5zm-1 5h2v4h-2zm0 5h2v2h-2z"
+            ></path>
+          </svg>
+          Beta Feature
+        </div>
+      </div>
+
+      <!-- Central Heading & Description -->
+      <div class="relative z-10 mb-8 mt-8 space-y-3 text-center">
+        <h2
+          class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl"
+        >
+          Do you Like My Website?
+        </h2>
+        <p
+          class="mx-auto max-w-md text-sm leading-relaxed text-slate-500 dark:text-slate-400 sm:text-base"
+        >
+          Aria's digital hub is constantly evolving. Tap your spontaneous
+          impression to help me craft a smoother experience!
+        </p>
+      </div>
+
+      <!-- Interactive Reaction & Counter Area -->
+      <div
+        class="relative z-10 grid grid-cols-1 items-stretch gap-6 rounded-2xl border border-slate-200/60 bg-slate-50/70 p-6 dark:border-slate-800 dark:bg-slate-900/40 md:grid-cols-2"
+      >
+        <!-- Reaction Buttons -->
+        <div class="flex flex-col justify-center gap-3">
           <button
             id="satisfiedButton"
-            class="transition-all duration-300 ease-in-out hover:-translate-y-[2px] active:scale-95"
+            type="button"
+            aria-label="Love this website"
+            class="reaction-btn hover:shadow-glow-rose group relative flex items-center justify-between gap-3 rounded-xl border border-transparent bg-white px-4 py-2.5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-rose-200 hover:bg-rose-50/50 focus:outline-none active:scale-95 dark:bg-slate-800 dark:hover:border-rose-500/40 dark:hover:bg-rose-500/10"
           >
-            <i class="fa-regular fa-heart text-5xl sm:text-[7rem]"></i>
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-rose-50 text-rose-500 transition-transform duration-200 group-hover:scale-110 dark:bg-rose-500/10"
+              >
+                <i class="fa-regular fa-heart text-base" id="likeHeartIcon"></i>
+              </div>
+              <div class="text-left">
+                <span
+                  class="block text-xs font-bold text-slate-800 transition-colors group-hover:text-rose-600 dark:text-slate-100"
+                  >Love It</span
+                >
+                <span
+                  class="block text-[10px] font-medium leading-tight text-slate-400 dark:text-slate-500"
+                  >Instant joy &amp; design</span
+                >
+              </div>
+            </div>
           </button>
 
           <button
             id="dislikeButton"
-            class="transition duration-300 ease-in-out hover:-translate-y-[2px] active:scale-95"
+            type="button"
+            aria-label="Needs improvement"
+            class="reaction-btn hover:shadow-glow-brand group relative flex items-center justify-between gap-3 rounded-xl border border-transparent bg-white px-4 py-2.5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/30 hover:bg-primary/5 focus:outline-none active:scale-95 dark:bg-slate-800 dark:hover:border-primary/40"
           >
-            <i class="fa-solid fa-heart-crack text-5xl sm:text-[7rem]"></i>
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-500 transition-transform duration-200 group-hover:scale-110 dark:bg-slate-700 dark:text-slate-300"
+                id="dislikeIconContainer"
+              >
+                <i
+                  class="fa-solid fa-heart-crack text-base"
+                  id="dislikeHeartIcon"
+                ></i>
+              </div>
+              <div class="text-left">
+                <span
+                  class="block text-xs font-bold text-slate-800 transition-colors group-hover:text-primary dark:text-slate-100"
+                  >Needs Work</span
+                >
+                <span
+                  class="block text-[10px] font-medium leading-tight text-slate-400 dark:text-slate-500"
+                  >Tell me what's off</span
+                >
+              </div>
+            </div>
           </button>
         </div>
-        <!-- Jumlah orang yang menyukai -->
-        <div class="flex w-full flex-col items-center sm:order-2 sm:w-1/2">
-          <span
-            class="text-5xl font-bold dark:text-slate-200 sm:text-7xl"
-            id="likeCount"
-            >-</span
+
+        <!-- Appreciation Pulse Card -->
+        <div
+          class="shadow-xs flex flex-col justify-between rounded-xl border border-slate-200/80 bg-white p-5 dark:border-slate-800 dark:bg-slate-800/60"
+        >
+          <div class="flex items-center justify-between gap-2">
+            <span
+              class="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500"
+              >Appreciation Pulse</span
+            >
+            <span
+              class="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[11px] font-bold text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-400"
+            >
+              <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 9.586 14.586 6H12z"
+                ></path>
+              </svg>
+              Trending Up
+            </span>
+          </div>
+          <div class="my-3 flex items-baseline gap-2">
+            <span
+              class="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white"
+              id="likeCount"
+              >-</span
+            >
+            <span
+              class="text-xs font-semibold text-slate-500 dark:text-slate-400"
+              >community supporters today</span
+            >
+          </div>
+          <div
+            class="flex items-center justify-end border-t border-slate-100 pt-3 text-[11px] text-slate-500 dark:border-slate-700 dark:text-slate-400"
           >
-          <span class="text-lg dark:text-white sm:text-xl"
-            >Visitor Like This Website</span
-          >
+            <span class="font-mono text-slate-400 dark:text-slate-500"
+              >Updated live</span
+            >
+          </div>
         </div>
       </div>
-      <p class="pt-10 text-slate-600 dark:text-slate-400">
-        **This feature is in Beta Test.
-      </p>
+
+      <!-- Quick Sentiment Badges / Tags -->
+      <div
+        class="relative z-10 mt-6 border-t border-slate-100 pt-5 dark:border-slate-800"
+      >
+        <p
+          class="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500"
+        >
+          What stands out the most?
+        </p>
+        <div class="flex flex-wrap gap-2" id="feedbackTags">
+          <button
+            type="button"
+            class="tag-chip rounded-full border border-slate-200 bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:border-primary/30 hover:bg-primary/10 hover:text-primary dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+          >
+            Super Fast Loading
+          </button>
+          <button
+            type="button"
+            class="tag-chip rounded-full border border-slate-200 bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:border-primary/30 hover:bg-primary/10 hover:text-primary dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+          >
+            Clean &amp; Elegant UI
+          </button>
+          <button
+            type="button"
+            class="tag-chip rounded-full border border-slate-200 bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:border-primary/30 hover:bg-primary/10 hover:text-primary dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+          >
+            Smooth Mobile View
+          </button>
+          <button
+            type="button"
+            class="tag-chip rounded-full border border-slate-200 bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:border-primary/30 hover:bg-primary/10 hover:text-primary dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+          >
+            Creative Projects
+          </button>
+        </div>
+      </div>
+
+      <!-- Floating Feedback Toast / Confirmation Message -->
+      <div
+        class="mt-4 hidden items-center justify-between rounded-xl border border-emerald-200 bg-emerald-50 p-3.5 text-xs text-emerald-800 transition-all dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300 sm:text-sm"
+        id="feedbackToast"
+      >
+        <div class="flex items-center gap-2">
+          <svg
+            class="h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            ></path>
+          </svg>
+          <span id="toastMessage">Noted! Thanks for the feedback.</span>
+        </div>
+        <button
+          type="button"
+          id="closeToast"
+          class="ml-2 font-bold text-emerald-700 hover:text-emerald-900 focus:outline-none dark:text-emerald-300 dark:hover:text-emerald-100"
+        >
+          &#10005;
+        </button>
+      </div>
+
+      <!-- Bottom Beta Note -->
+      <div
+        class="relative z-10 mt-6 flex flex-col gap-2 border-t border-slate-100 pt-4 text-[11px] text-slate-400 dark:border-slate-800 dark:text-slate-500 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div class="flex items-center gap-1.5">
+          <span
+            class="inline-block h-1.5 w-1.5 rounded-full bg-slate-300 dark:bg-slate-600"
+          ></span>
+          <span>This feature is in Beta Test.</span>
+        </div>
+      </div>
     </section>
     <!-- section like end -->
 
@@ -1771,124 +3521,15 @@
     </footer>
     <!-- footer end -->
 
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
-      import {
-        getDatabase,
-        ref,
-        onValue,
-        runTransaction,
-        set,
-        update,
-      } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
-
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyDzb4O_VtanFnEV39OnN8z-Jd-J0ofK3ik",
-        authDomain: "website-portfolio-3fa55.firebaseapp.com",
-        databaseURL:
-          "https://website-portfolio-3fa55-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "website-portfolio-3fa55",
-        storageBucket: "website-portfolio-3fa55.appspot.com",
-        messagingSenderId: "151703843007",
-        appId: "1:151703843007:web:b036c890a60c087b2d560a",
-        measurementId: "G-NEJ9X68VRT",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const database = getDatabase(app);
-
-      // section likes
-      const satisfiedButton = document.getElementById("satisfiedButton");
-      const dislikeButton = document.getElementById("dislikeButton");
-      const likeCount = document.getElementById("likeCount");
-
-      // Mendapatkan referensi ke Firebase Realtime Database
-      const likeCountRef = ref(database, "likeCount");
-      const isLikedRef = ref(database, "isLiked");
-
-      // Mendapatkan jumlah like dari database
-      onValue(likeCountRef, (snapshot) => {
-        const currentCount = snapshot.val();
-        likeCount.textContent = currentCount ? currentCount.toString() : "0";
-      });
-
-      // Mendapatkan status isLiked dari database
-      onValue(isLikedRef, (snapshot) => {
-        const isLiked = snapshot.val();
-        if (isLiked) {
-          satisfiedButton.innerHTML =
-            '<i class="fa-regular fa-heart text-5xl sm:text-[7rem]" ></i>';
-          dislikeButton.disabled = false;
-        } else {
-          satisfiedButton.innerHTML =
-            '<i class="fa-regular fa-heart text-5xl sm:text-[7rem]"></i>';
-          dislikeButton.disabled = true;
-        }
-      });
-
-      // Mendefinisikan variabel untuk melacak status tombol
-      let isLiked = false;
-
-      // Mengubah status isLiked dan jumlah like saat tombol "Suka" diklik
-      satisfiedButton.addEventListener("click", () => {
-        if (!isLiked) {
-          runTransaction(likeCountRef, (currentCount) => {
-            if (!currentCount) {
-              return 1;
-            } else {
-              return currentCount + 1;
-            }
-          });
-
-          set(isLikedRef, true);
-
-          isLiked = true;
-          satisfiedButton.innerHTML =
-            '<i class="fa-solid fa-heart text-5xl sm:text-[7rem]" style="color: #ec1f09;"></i>';
-          dislikeButton.innerHTML =
-            '<i class="fa-solid fa-heart-crack text-5xl sm:text-[7rem]"></i>';
-        }
-      });
-
-      // Mengubah status isLiked dan jumlah like saat tombol "Tidak Suka" diklik
-      dislikeButton.addEventListener("click", () => {
-        if (isLiked) {
-          runTransaction(likeCountRef, (currentCount) => {
-            if (currentCount && currentCount > 0) {
-              return currentCount - 1;
-            }
-          });
-
-          update(isLikedRef, {
-            isLiked: false,
-          });
-
-          isLiked = false;
-          satisfiedButton.innerHTML =
-            '<i class="fa-regular fa-heart text-5xl sm:text-[7rem]"></i>';
-          dislikeButton.innerHTML =
-            '<i class="fa-solid fa-heart-crack text-5xl sm:text-[7rem]" style="color: #296899;"></i>';
-        }
-      });
-
-      dislikeButton.addEventListener("click", () => {
-        dislikeButton.innerHTML =
-          '<i class="fa-solid fa-heart-crack text-5xl sm:text-[7rem]" style="color: #296899;"></i>';
-      });
-    </script>
-
     <!-- section hubungi saya end -->
-    <script src="dist/js/script.js"></script>
+    <script type="module" src="dist/js/firebase-like.js"></script>
+    <script src="dist/js/skills.js"></script>
     <!-- <script src="node_modules/flowbite/dist/flowbite.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.2/dist/flowbite.min.js"></script>
 
-    <!-- script AOS -->
+    <!-- script AOS (aos.js harus dimuat sebelum script.js karena AOS.init() ada di sana) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="dist/js/script.js"></script>
     <!-- script AOS end -->
   </body>
 </html>

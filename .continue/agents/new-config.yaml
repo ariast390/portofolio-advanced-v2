@@ -1,0 +1,22 @@
+name: local Config
+version: 1.0.0
+schema: v1
+models:
+  - name: Qodeer Sonnet 5
+    provider: openai
+    model: sonnet-5
+    apiBase: https://organization.api-github.com/v1
+    apiKey: qdr-e9RNV6tI0z3yiHz2M8hPcfTsk8Yvpp7v
+    roles: [chat, edit, apply]
+  - name: Qodeer Opus 5
+    provider: openai
+    model: opus-5
+    apiBase: https://organization.api-github.com/v1
+    apiKey: qdr-e9RNV6tI0z3yiHz2M8hPcfTsk8Yvpp7v
+    roles: [chat, edit, apply]
+  - name: Qodeer haiku 4.5
+    provider: openai
+    model: haiku-4.5
+    apiBase: https://organization.api-github.com/v1
+    apiKey: qdr-e9RNV6tI0z3yiHz2M8hPcfTsk8Yvpp7v
+    roles: [chat, edit, apply]
